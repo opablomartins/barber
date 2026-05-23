@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Como funciona o barbeiro a domicílio?",
+    "answer": "Você escolhe o barbeiro, agenda pelo WhatsApp e o profissional vai até sua casa ou escritório com todos os equipamentos. O atendimento inclui corte, barba ou pacotes completos, com a mesma qualidade de uma barbearia premium."
+  },
+  {
+    "question": "Quais regiões de São Paulo são atendidas?",
+    "answer": "Atendemos Pinheiros, Jardins, Moema, Vila Madalena, Itaim Bibi e regiões adjacentes. Estamos expandindo constantemente — entre em contato para verificar disponibilidade na sua região."
+  },
+  {
+    "question": "Os barbeiros são verificados?",
+    "answer": "Sim. Todos os profissionais passam por verificação de identidade, avaliação técnica e checagem de referências. Apenas barbeiros com experiência comprovada e avaliações positivas integram nossa plataforma."
+  },
+  {
+    "question": "Quanto custa um corte a domicílio?",
+    "answer": "Os preços variam de R$ 69 a R$ 189, dependendo do barbeiro e serviço escolhido. Cada perfil exibe a tabela completa de preços. Não há taxas ocultas — o valor informado é o valor final."
+  },
+  {
+    "question": "Posso agendar para o mesmo dia?",
+    "answer": "Sim, dependendo da disponibilidade do barbeiro. Muitos profissionais oferecem atendimento no mesmo dia ou em até 24 horas. Envie uma mensagem pelo WhatsApp para verificar horários disponíveis."
+  },
+  {
+    "question": "Quais formas de pagamento são aceitas?",
+    "answer": "Atualmente aceitamos PIX e cartão de crédito/débito. Em breve integraremos pagamento direto pela plataforma para uma experiência ainda mais fluida."
+  }
+]

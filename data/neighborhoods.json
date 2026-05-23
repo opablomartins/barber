@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "pinheiros",
+    "name": "Pinheiros",
+    "citySlug": "sao-paulo",
+    "description": "Barbeiro a domicílio em Pinheiros com profissionais selecionados e atendimento premium. Corte masculino, barba e serviços completos no conforto do seu apartamento ou escritório na região de Pinheiros, com horários flexíveis e equipamentos esterilizados.",
+    "seoTitle": "Barbeiro a Domicílio em Pinheiros, SP",
+    "seoDescription": "Barbeiro a domicílio em Pinheiros, São Paulo. Corte masculino em casa com profissionais verificados. Agende pelo WhatsApp com disponibilidade rápida.",
+    "keywords": [
+      "barbeiro a domicilio pinheiros",
+      "barbeiro em casa pinheiros",
+      "corte masculino pinheiros"
+    ]
+  },
+  {
+    "slug": "jardins",
+    "name": "Jardins",
+    "citySlug": "sao-paulo",
+    "description": "Serviço exclusivo de barbeiro a domicílio nos Jardins. Atendemos clientes exigentes que buscam discrição, pontualidade e excelência técnica. Cortes executivos, barbas impecáveis e experiência VIP no conforto do seu lar.",
+    "seoTitle": "Barbeiro a Domicílio nos Jardins, SP",
+    "seoDescription": "Barbeiro premium a domicílio nos Jardins, São Paulo. Corte masculino executivo e barba com profissionais verificados. Agendamento via WhatsApp.",
+    "keywords": [
+      "barbeiro a domicilio jardins",
+      "barbeiro em casa jardins",
+      "corte masculino jardins sao paulo"
+    ]
+  },
+  {
+    "slug": "moema",
+    "name": "Moema",
+    "citySlug": "sao-paulo",
+    "description": "Barbeiro delivery em Moema com a comodidade que você merece. Profissionais qualificados levam toda a estrutura de uma barbearia premium até sua porta. Ideal para moradores e profissionais da região de Moema e Ibirapuera.",
+    "seoTitle": "Barbeiro a Domicílio em Moema, SP",
+    "seoDescription": "Barbeiro a domicílio em Moema, São Paulo. Corte masculino e barba em casa com barbeiros verificados. Atendimento rápido e premium.",
+    "keywords": [
+      "barbeiro a domicilio moema",
+      "barbeiro delivery moema",
+      "corte masculino moema"
+    ]
+  },
+  {
+    "slug": "vila-madalena",
+    "name": "Vila Madalena",
+    "citySlug": "sao-paulo",
+    "description": "Barbeiro a domicílio na Vila Madalena para quem valoriza estilo e praticidade. Cortes modernos, fades e barbas com técnicas atualizadas, no conforto do seu espaço. Atendemos toda a Vila Madalena e região.",
+    "seoTitle": "Barbeiro a Domicílio na Vila Madalena, SP",
+    "seoDescription": "Barbeiro a domicílio na Vila Madalena, São Paulo. Corte masculino moderno e barba em casa. Profissionais verificados com agendamento via WhatsApp.",
+    "keywords": [
+      "barbeiro a domicilio vila madalena",
+      "barbeiro em casa vila madalena",
+      "corte masculino vila madalena"
+    ]
+  },
+  {
+    "slug": "itaim-bibi",
+    "name": "Itaim Bibi",
+    "citySlug": "sao-paulo",
+    "description": "Barbeiro premium a domicílio no Itaim Bibi. Atendimento corporativo e residencial de alto padrão para executivos e profissionais da Faria Lima e entorno. Pontualidade, discrição e resultados impecáveis garantidos.",
+    "seoTitle": "Barbeiro a Domicílio no Itaim Bibi, SP",
+    "seoDescription": "Barbeiro a domicílio no Itaim Bibi, São Paulo. Corte masculino executivo e barba premium em casa. Agende com barbeiros verificados.",
+    "keywords": [
+      "barbeiro a domicilio itaim bibi",
+      "barbeiro em casa itaim",
+      "corte masculino itaim bibi"
+    ]
+  }
+]

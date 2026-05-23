@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "rafael-mendes",
+    "name": "Rafael Mendes",
+    "title": "Barbeiro Master",
+    "bio": "Especialista em cortes clássicos e degradês premium. Mais de 12 anos de experiência atendendo executivos e profissionais exigentes em São Paulo. Cada atendimento inclui consultoria de estilo personalizada.",
+    "image": "/images/barbers/rafael.svg",
+    "rating": 4.9,
+    "reviewCount": 287,
+    "featured": true,
+    "verified": true,
+    "neighborhoods": ["pinheiros", "jardins", "vila-madalena"],
+    "city": "sao-paulo",
+    "experience": 12,
+    "specialties": ["Degradê", "Barba", "Corte clássico"],
+    "services": [
+      { "name": "Corte masculino", "price": 89, "duration": 45 },
+      { "name": "Barba completa", "price": 59, "duration": 30 },
+      { "name": "Corte + Barba", "price": 129, "duration": 60 }
+    ]
+  },
+  {
+    "slug": "lucas-oliveira",
+    "name": "Lucas Oliveira",
+    "title": "Especialista em Fade",
+    "bio": "Referência em fades e cortes modernos. Atendo com equipamentos profissionais de última geração e produtos importados. Disponível em horários flexíveis, inclusive finais de semana.",
+    "image": "/images/barbers/lucas.svg",
+    "rating": 4.8,
+    "reviewCount": 194,
+    "featured": true,
+    "verified": true,
+    "neighborhoods": ["moema", "itaim-bibi", "jardins"],
+    "city": "sao-paulo",
+    "experience": 8,
+    "specialties": ["Fade", "Navalhado", "Design de barba"],
+    "services": [
+      { "name": "Corte masculino", "price": 79, "duration": 40 },
+      { "name": "Fade premium", "price": 99, "duration": 50 },
+      { "name": "Barba + hidratação", "price": 69, "duration": 35 }
+    ]
+  },
+  {
+    "slug": "bruno-santos",
+    "name": "Bruno Santos",
+    "title": "Barbeiro Artístico",
+    "bio": "Combino técnica tradicional com tendências contemporâneas. Meu diferencial é a atenção aos detalhes e a experiência premium no conforto do seu lar ou escritório.",
+    "image": "/images/barbers/bruno.svg",
+    "rating": 5.0,
+    "reviewCount": 156,
+    "featured": true,
+    "verified": true,
+    "neighborhoods": ["pinheiros", "vila-madalena", "moema"],
+    "city": "sao-paulo",
+    "experience": 10,
+    "specialties": ["Corte artístico", "Barboterapia", "Pigmentação"],
+    "services": [
+      { "name": "Corte masculino", "price": 95, "duration": 50 },
+      { "name": "Barboterapia", "price": 79, "duration": 40 },
+      { "name": "Pacote completo", "price": 149, "duration": 75 }
+    ]
+  },
+  {
+    "slug": "diego-costa",
+    "name": "Diego Costa",
+    "title": "Barbeiro Executivo",
+    "bio": "Atendo CEOs, empreendedores e profissionais que valorizam pontualidade e discrição. Experiência em atendimentos corporativos e residenciais de alto padrão nos Jardins e Itaim.",
+    "image": "/images/barbers/diego.svg",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "featured": true,
+    "verified": true,
+    "neighborhoods": ["jardins", "itaim-bibi", "pinheiros"],
+    "city": "sao-paulo",
+    "experience": 15,
+    "specialties": ["Corte executivo", "Barba clássica", "Atendimento VIP"],
+    "services": [
+      { "name": "Corte executivo", "price": 109, "duration": 45 },
+      { "name": "Barba clássica", "price": 69, "duration": 30 },
+      { "name": "VIP Experience", "price": 189, "duration": 90 }
+    ]
+  },
+  {
+    "slug": "thiago-ribeiro",
+    "name": "Thiago Ribeiro",
+    "title": "Especialista em Barba",
+    "bio": "Apaixonado por barbas bem cuidadas. Trabalho com técnicas de navalha, toalha quente e produtos premium para garantir o acabamento perfeito em cada visita.",
+    "image": "/images/barbers/thiago.svg",
+    "rating": 4.7,
+    "reviewCount": 142,
+    "featured": false,
+    "verified": true,
+    "neighborhoods": ["moema", "pinheiros"],
+    "city": "sao-paulo",
+    "experience": 7,
+    "specialties": ["Barba", "Navalha", "Hidratação"],
+    "services": [
+      { "name": "Corte masculino", "price": 75, "duration": 40 },
+      { "name": "Barba na navalha", "price": 65, "duration": 35 },
+      { "name": "Corte + Barba", "price": 119, "duration": 55 }
+    ]
+  },
+  {
+    "slug": "gustavo-almeida",
+    "name": "Gustavo Almeida",
+    "title": "Barbeiro Mobile",
+    "bio": "Levo a barbearia até você com setup completo e esterilização hospitalar. Ideal para quem busca praticidade sem abrir mão de qualidade profissional.",
+    "image": "/images/barbers/gustavo.svg",
+    "rating": 4.8,
+    "reviewCount": 178,
+    "featured": false,
+    "verified": true,
+    "neighborhoods": ["vila-madalena", "pinheiros", "jardins"],
+    "city": "sao-paulo",
+    "experience": 6,
+    "specialties": ["Corte moderno", "Degradê", "Sobrancelha"],
+    "services": [
+      { "name": "Corte masculino", "price": 69, "duration": 35 },
+      { "name": "Degradê", "price": 89, "duration": 45 },
+      { "name": "Sobrancelha", "price": 29, "duration": 15 }
+    ]
+  },
+  {
+    "slug": "marcelo-ferreira",
+    "name": "Marcelo Ferreira",
+    "title": "Master Barber",
+    "bio": "Formado nas melhores academias de barbearia do Brasil. Especializado em cortes que valorizam o formato do rosto e estilo de vida de cada cliente.",
+    "image": "/images/barbers/marcelo.svg",
+    "rating": 4.9,
+    "reviewCount": 201,
+    "featured": false,
+    "verified": true,
+    "neighborhoods": ["itaim-bibi", "moema", "jardins"],
+    "city": "sao-paulo",
+    "experience": 11,
+    "specialties": ["Consultoria de estilo", "Corte clássico", "Barba"],
+    "services": [
+      { "name": "Corte masculino", "price": 85, "duration": 45 },
+      { "name": "Consultoria + corte", "price": 119, "duration": 60 },
+      { "name": "Barba premium", "price": 59, "duration": 30 }
+    ]
+  },
+  {
+    "slug": "andre-lima",
+    "name": "André Lima",
+    "title": "Barbeiro Premium",
+    "bio": "Atendimento exclusivo com foco em experiência sensorial completa. Música ambiente, aromaterapia e produtos de linha premium fazem parte de cada sessão.",
+    "image": "/images/barbers/andre.svg",
+    "rating": 5.0,
+    "reviewCount": 98,
+    "featured": false,
+    "verified": true,
+    "neighborhoods": ["jardins", "itaim-bibi"],
+    "city": "sao-paulo",
+    "experience": 9,
+    "specialties": ["Experiência premium", "Barboterapia", "Fade"],
+    "services": [
+      { "name": "Corte masculino", "price": 99, "duration": 50 },
+      { "name": "Experiência premium", "price": 179, "duration": 80 },
+      { "name": "Barboterapia", "price": 89, "duration": 45 }
+    ]
+  }
+]
