@@ -19,7 +19,7 @@ export function CtaSection({
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="relative overflow-hidden rounded-3xl border border-subtle bg-brand px-8 py-16 text-center text-primary-foreground sm:px-16">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(230,213,184,0.15),transparent)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(242,232,213,0.12),transparent)]" />
             <div className="relative space-y-6">
               <h2
                 id="cta-heading"

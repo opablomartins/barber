@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 export function Hero() {
   return (
     <section className="relative overflow-x-hidden bg-ambient-glow">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_70%_20%,rgba(237,217,200,0.5),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_70%_20%,rgba(240,228,230,0.55),transparent)]" />
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-32">
         <FadeIn immediate className="space-y-8">

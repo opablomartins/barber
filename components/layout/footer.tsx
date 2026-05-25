@@ -12,7 +12,7 @@ export async function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <Logo showTagline imageClassName="h-14 sm:h-16" />
+            <Logo variant="footer" />
             <p className="text-sm leading-relaxed text-muted-foreground">
               Barbearia a domicílio em São Paulo. Profissionais curados,
               atendimento refinado e agendamento rápido via WhatsApp.

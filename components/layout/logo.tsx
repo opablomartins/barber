@@ -3,49 +3,71 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/config/site";
 import { cn } from "@/lib/utils";
 
+/** Caminho versionado evita cache antigo do navegador / Next Image */
+const LOGO_SRC = "/images/studio-banks-logo.png";
+
+type LogoVariant = "nav" | "footer";
+
 interface LogoProps {
   className?: string;
-  imageClassName?: string;
-  showTagline?: boolean;
+  variant?: LogoVariant;
   linkToHome?: boolean;
 }
 
+const variantStyles: Record<
+  LogoVariant,
+  { width: number; height: number; wrapper: string; image: string }
+> = {
+  nav: {
+    width: 200,
+    height: 100,
+    wrapper: "h-12 w-12 rounded-xl sm:h-14 sm:w-14",
+    image: "h-full w-full object-cover",
+  },
+  footer: {
+    width: 280,
+    height: 140,
+    wrapper: "h-28 w-28 rounded-2xl sm:h-32 sm:w-32",
+    image: "h-full w-full object-cover",
+  },
+};
+
 export function Logo({
   className,
-  imageClassName,
-  showTagline = false,
+  variant = "nav",
   linkToHome = true,
 }: LogoProps) {
+  const styles = variantStyles[variant];
+
   const content = (
-    <div className={cn("flex items-center gap-3", className)}>
-      <Image
-        src="/images/logo.png"
-        alt={`${siteConfig.name} — Barbearia a domicílio`}
-        width={showTagline ? 56 : 44}
-        height={showTagline ? 56 : 44}
+    <div className={cn("flex shrink-0 items-center", className)}>
+      <div
         className={cn(
-          "h-10 w-auto object-contain sm:h-11",
-          imageClassName,
+          "overflow-hidden shadow-sm ring-1 ring-brand/10",
+          styles.wrapper,
         )}
-        priority
-      />
-      {showTagline && (
-        <div className="hidden flex-col sm:flex">
-          <span className="font-heading text-lg font-medium leading-tight text-foreground">
-            Studio Banks
-          </span>
-          <span className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
-            Barbearia a domicílio
-          </span>
-        </div>
-      )}
+      >
+        <Image
+          src={LOGO_SRC}
+          alt={`${siteConfig.name} — Barbearia a domicílio`}
+          width={styles.width}
+          height={styles.height}
+          className={styles.image}
+          priority={variant === "nav"}
+          unoptimized
+        />
+      </div>
     </div>
   );
 
   if (!linkToHome) return content;
 
   return (
-    <Link href="/" className="transition-opacity hover:opacity-90">
+    <Link
+      href="/"
+      className="inline-flex shrink-0 transition-opacity hover:opacity-90"
+      aria-label={`${siteConfig.name} — página inicial`}
+    >
       {content}
     </Link>
   );

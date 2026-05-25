@@ -7,7 +7,7 @@ export function organizationSchema() {
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: getAbsoluteUrl("/images/logo.png"),
+    logo: getAbsoluteUrl("/images/studio-banks-logo.png"),
     description: siteConfig.description,
     contactPoint: {
       "@type": "ContactPoint",
@@ -200,7 +200,7 @@ export function articleSchema(post: BlogPost) {
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: getAbsoluteUrl("/images/logo.png"),
+        url: getAbsoluteUrl("/images/studio-banks-logo.png"),
       },
     },
     mainEntityOfPage: getAbsoluteUrl(`/blog/${post.slug}`),
