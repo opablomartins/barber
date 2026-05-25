@@ -15,7 +15,7 @@ export function createPageMetadata({
   description,
   path,
   keywords = [],
-  ogImage = "/images/og-default.svg",
+  ogImage = "/images/logo.png",
   noIndex = false,
 }: PageMetadataOptions): Metadata {
   const canonical = getAbsoluteUrl(path);

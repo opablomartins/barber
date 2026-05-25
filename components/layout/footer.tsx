@@ -1,31 +1,26 @@
 import Link from "next/link";
-import { Scissors } from "lucide-react";
 import { siteConfig } from "@/lib/config/site";
 import { getNeighborhoods } from "@/lib/api";
+import { Logo } from "@/components/layout/logo";
 import { Separator } from "@/components/ui/separator";
 
 export async function Footer() {
   const neighborhoods = await getNeighborhoods();
 
   return (
-    <footer className="border-t border-gold-subtle bg-surface">
+    <footer className="border-t border-subtle bg-pastel-cream/50">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Scissors className="size-5 text-gold" strokeWidth={1.5} />
-              <span className="font-heading text-xl font-semibold">
-                {siteConfig.name}
-              </span>
-            </Link>
+            <Logo showTagline imageClassName="h-14 sm:h-16" />
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Barbeiro a domicílio premium em São Paulo. Profissionais
-              verificados, atendimento exclusivo e agendamento rápido.
+              Barbearia a domicílio em São Paulo. Profissionais curados,
+              atendimento refinado e agendamento rápido via WhatsApp.
             </p>
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gold">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">
               Navegação
             </h3>
             <ul className="space-y-2.5">
@@ -38,7 +33,7 @@ export async function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    className="text-sm text-muted-foreground transition-colors hover:text-brand"
                   >
                     {link.label}
                   </Link>
@@ -48,7 +43,7 @@ export async function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gold">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">
               Bairros
             </h3>
             <ul className="space-y-2.5">
@@ -56,7 +51,7 @@ export async function Footer() {
                 <li key={n.slug}>
                   <Link
                     href={`/bairro/${n.slug}`}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    className="text-sm text-muted-foreground transition-colors hover:text-brand"
                   >
                     {n.name}
                   </Link>
@@ -66,27 +61,27 @@ export async function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gold">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand">
               Serviços
             </h3>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li>Corte masculino a domicílio</li>
               <li>Barba e barboterapia</li>
               <li>Atendimento executivo</li>
-              <li>Pacotes premium</li>
+              <li>Pacotes sob medida</li>
             </ul>
           </div>
         </div>
 
-        <Separator className="my-10 bg-gold-subtle" />
+        <Separator className="my-10 bg-border" />
 
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} {siteConfig.name}. Todos os direitos
             reservados.
           </p>
-          <p className="text-xs text-muted-foreground">
-            Barbeiro a domicílio · São Paulo, SP
+          <p className="text-xs uppercase tracking-wider text-muted-foreground">
+            Estd. 2015 · São Paulo, SP
           </p>
         </div>
       </div>

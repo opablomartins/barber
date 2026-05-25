@@ -8,6 +8,8 @@ interface FadeInProps {
   className?: string;
   delay?: number;
   direction?: "up" | "down" | "none";
+  /** Conteúdo acima da dobra — visível sem depender só de whileInView */
+  immediate?: boolean;
 }
 
 export function FadeIn({
@@ -15,6 +17,7 @@ export function FadeIn({
   className,
   delay = 0,
   direction = "up",
+  immediate = false,
 }: FadeInProps) {
   const offset = direction === "up" ? 24 : direction === "down" ? -24 : 0;
 
@@ -22,9 +25,10 @@ export function FadeIn({
     <LazyMotion features={domAnimation}>
       <m.div
         className={className}
-        initial={{ opacity: 0, y: offset }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        initial={immediate ? false : { opacity: 0, y: offset }}
+        animate={{ opacity: 1, y: 0 }}
+        whileInView={immediate ? undefined : { opacity: 1, y: 0 }}
+        viewport={immediate ? undefined : { once: true, margin: "-40px" }}
         transition={{ duration: 0.5, delay, ease: [0.25, 0.1, 0.25, 1] }}
       >
         {children}

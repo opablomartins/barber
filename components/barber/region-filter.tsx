@@ -26,10 +26,10 @@ export function RegionFilter({
       onValueChange={(v) => onChange(v ?? "all")}
     >
       <SelectTrigger
-        className="border-gold-subtle bg-surface"
+        className="border-subtle bg-surface"
         aria-label="Filtrar por região"
       >
-        <MapPin className="size-4 text-gold" strokeWidth={1.5} />
+        <MapPin className="size-4 text-brand" strokeWidth={1.5} />
         <SelectValue placeholder="Todas as regiões" />
       </SelectTrigger>
       <SelectContent>

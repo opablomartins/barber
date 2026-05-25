@@ -32,12 +32,12 @@ export default async function BlogPage() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
-            <Card className="h-full border-gold-subtle bg-surface transition-colors hover:border-gold/30">
+            <Card className="h-full border-subtle bg-surface transition-colors hover:border-brand/30">
               <CardContent className="space-y-4 p-6">
-                <Badge variant="outline" className="border-gold-subtle">
+                <Badge variant="outline" className="border-subtle">
                   {post.category}
                 </Badge>
-                <h2 className="text-xl font-semibold transition-colors group-hover:text-gold">
+                <h2 className="text-xl font-semibold transition-colors group-hover:text-brand">
                   {post.title}
                 </h2>
                 <p className="text-sm leading-relaxed text-muted-foreground">

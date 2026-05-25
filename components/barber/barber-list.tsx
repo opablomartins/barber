@@ -8,7 +8,7 @@ interface BarberListProps {
 export function BarberList({ barbers }: BarberListProps) {
   if (barbers.length === 0) {
     return (
-      <div className="rounded-2xl border border-gold-subtle bg-surface py-16 text-center">
+      <div className="rounded-2xl border border-subtle bg-surface py-16 text-center">
         <p className="text-muted-foreground">
           Nenhum barbeiro encontrado para os filtros selecionados.
         </p>

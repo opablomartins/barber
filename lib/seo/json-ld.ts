@@ -7,7 +7,7 @@ export function organizationSchema() {
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: getAbsoluteUrl("/images/logo.svg"),
+    logo: getAbsoluteUrl("/images/logo.png"),
     description: siteConfig.description,
     contactPoint: {
       "@type": "ContactPoint",
@@ -200,7 +200,7 @@ export function articleSchema(post: BlogPost) {
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: getAbsoluteUrl("/images/logo.svg"),
+        url: getAbsoluteUrl("/images/logo.png"),
       },
     },
     mainEntityOfPage: getAbsoluteUrl(`/blog/${post.slug}`),

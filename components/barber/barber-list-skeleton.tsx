@@ -6,7 +6,7 @@ export function BarberListSkeleton() {
       {Array.from({ length: 8 }).map((_, i) => (
         <div
           key={i}
-          className="overflow-hidden rounded-xl border border-gold-subtle bg-surface"
+          className="overflow-hidden rounded-xl border border-subtle bg-surface"
         >
           <Skeleton className="aspect-[4/3] w-full rounded-none" />
           <div className="space-y-3 p-5">

@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: process.env.NEXT_PUBLIC_BRAND_NAME ?? "BarberHome",
+  name: process.env.NEXT_PUBLIC_BRAND_NAME ?? "Studio Banks",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://exemplo.com.br",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "5511999999999",
   defaultCity: process.env.NEXT_PUBLIC_DEFAULT_CITY ?? "sao-paulo",
   locale: "pt_BR",
   description:
-    "Barbeiro a domicílio premium em São Paulo. Corte masculino em casa com profissionais verificados, higiene impecável e agendamento rápido via WhatsApp.",
+    "Studio Banks — barbearia a domicílio em São Paulo. Corte masculino em casa com profissionais curados, atendimento refinado e agendamento via WhatsApp.",
   keywords: [
     "barbeiro a domicilio",
     "barbeiro delivery",

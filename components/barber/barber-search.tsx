@@ -20,7 +20,7 @@ export function BarberSearch({ value, onChange }: BarberSearchProps) {
         placeholder="Buscar por nome ou especialidade..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="border-gold-subtle bg-surface pl-10"
+        className="border-subtle bg-surface pl-10"
         aria-label="Buscar barbeiros"
       />
     </div>

@@ -16,9 +16,9 @@ import { FAQSection } from "@/components/sections/faq";
 import { CtaSection } from "@/components/sections/cta-section";
 
 export const metadata = createPageMetadata({
-  title: "Barbeiro a Domicílio Premium em São Paulo",
+  title: "Studio Banks — Barbearia a Domicílio em São Paulo",
   description:
-    "Barbeiro a domicílio em São Paulo com profissionais verificados. Corte masculino em casa, barba e atendimento premium. Agende pelo WhatsApp em minutos.",
+    "Studio Banks: barbearia a domicílio em São Paulo com profissionais curados. Corte masculino em casa, atendimento refinado. Agende pelo WhatsApp.",
   path: "/",
   keywords: [
     "barbeiro a domicilio",

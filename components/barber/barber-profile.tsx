@@ -27,7 +27,7 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
     <div className="grid gap-12 lg:grid-cols-3">
       <div className="lg:col-span-1">
         <div className="sticky top-24 space-y-6">
-          <div className="relative aspect-square overflow-hidden rounded-2xl border border-gold-subtle">
+          <div className="relative aspect-square overflow-hidden rounded-2xl border border-subtle">
             <Image
               src={barber.image}
               alt={barber.name}
@@ -42,7 +42,10 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
             href={getWhatsAppUrl(whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className={cn(buttonVariants({ size: "lg" }), "w-full")}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-full bg-brand text-primary-foreground hover:bg-brand-muted",
+            )}
           >
             Agendar com {barber.name.split(" ")[0]}
           </a>
@@ -56,7 +59,7 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
               {barber.name}
             </h1>
             {barber.verified && (
-              <Badge className="gap-1 bg-gold/90 text-primary-foreground">
+              <Badge className="gap-1 bg-brand/90 text-primary-foreground">
                 <BadgeCheck className="size-3.5" strokeWidth={1.5} />
                 Verificado
               </Badge>
@@ -66,14 +69,14 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
 
           <div className="mt-4 flex flex-wrap items-center gap-4 text-sm">
             <span className="flex items-center gap-1.5">
-              <Star className="size-4 fill-gold text-gold" strokeWidth={1.5} />
+              <Star className="size-4 fill-brand text-brand" strokeWidth={1.5} />
               <strong>{barber.rating}</strong>
               <span className="text-muted-foreground">
                 ({barber.reviewCount} avaliações)
               </span>
             </span>
             <span className="flex items-center gap-1.5 text-muted-foreground">
-              <Scissors className="size-4 text-gold" strokeWidth={1.5} />
+              <Scissors className="size-4 text-brand" strokeWidth={1.5} />
               {barber.experience} anos de experiência
             </span>
           </div>
@@ -91,7 +94,7 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
               <Badge
                 key={s}
                 variant="outline"
-                className="border-gold-subtle"
+                className="border-subtle"
               >
                 {s}
               </Badge>
@@ -106,7 +109,7 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
               <Link key={n.slug} href={`/bairro/${n.slug}`}>
                 <Badge
                   variant="outline"
-                  className="border-gold-subtle transition-colors hover:border-gold hover:text-gold"
+                  className="border-subtle transition-colors hover:border-brand hover:text-brand"
                 >
                   <MapPin className="mr-1 size-3" strokeWidth={1.5} />
                   {n.name}
@@ -122,7 +125,7 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
             {barber.services.map((service) => (
               <div
                 key={service.name}
-                className="flex items-center justify-between rounded-xl border border-gold-subtle bg-surface p-4"
+                className="flex items-center justify-between rounded-xl border border-subtle bg-surface p-4"
               >
                 <div>
                   <p className="font-medium">{service.name}</p>
@@ -131,7 +134,7 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
                     {service.duration} min
                   </p>
                 </div>
-                <p className="text-lg font-semibold text-gold">
+                <p className="text-lg font-semibold text-brand">
                   R$ {service.price}
                 </p>
               </div>
@@ -146,13 +149,13 @@ export async function BarberProfile({ barber, reviews }: BarberProfileProps) {
               {reviews.map((review) => (
                 <blockquote
                   key={review.id}
-                  className="rounded-xl border border-gold-subtle bg-surface p-5"
+                  className="rounded-xl border border-subtle bg-surface p-5"
                 >
                   <div className="mb-2 flex items-center gap-1">
                     {Array.from({ length: review.rating }).map((_, i) => (
                       <Star
                         key={i}
-                        className="size-4 fill-gold text-gold"
+                        className="size-4 fill-brand text-brand"
                         strokeWidth={1.5}
                       />
                     ))}
@@ -187,7 +190,7 @@ export function Breadcrumbs({
             {item.href ? (
               <Link
                 href={item.href}
-                className="transition-colors hover:text-gold"
+                className="transition-colors hover:text-brand"
               >
                 {item.label}
               </Link>

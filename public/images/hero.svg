@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
-  <rect width="800" height="1000" fill="#141414"/>
-  <rect x="100" y="600" width="600" height="300" rx="20" fill="#1F1F1F" stroke="#C9A962" stroke-width="1" opacity="0.2"/>
-  <circle cx="400" cy="350" r="120" fill="#1F1F1F" stroke="#C9A962" stroke-width="2" opacity="0.3"/>
-  <rect x="250" y="500" width="300" height="80" rx="10" fill="#C9A962" opacity="0.1"/>
-  <line x1="200" y1="200" x2="600" y2="200" stroke="#C9A962" stroke-width="1" opacity="0.15"/>
-  <line x1="150" y1="750" x2="650" y2="750" stroke="#C9A962" stroke-width="1" opacity="0.1"/>
-  <text x="400" y="860" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#C9A962" opacity="0.4">Premium Experience</text>
+  <rect width="800" height="1000" fill="#F5EDE3"/>
+  <rect x="100" y="600" width="600" height="300" rx="24" fill="#FFFDF9" stroke="#9B5B34" stroke-width="1" opacity="0.25"/>
+  <circle cx="400" cy="350" r="120" fill="#EDD9C8" stroke="#9B5B34" stroke-width="1.5" opacity="0.4"/>
+  <rect x="250" y="500" width="300" height="80" rx="12" fill="#9B5B34" opacity="0.08"/>
+  <line x1="200" y1="200" x2="600" y2="200" stroke="#5C6B4F" stroke-width="1" opacity="0.15"/>
+  <line x1="150" y1="750" x2="650" y2="750" stroke="#9B5B34" stroke-width="1" opacity="0.12"/>
+  <text x="400" y="860" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#9B5B34" opacity="0.35">Studio Banks</text>
 </svg>

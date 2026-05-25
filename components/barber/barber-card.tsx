@@ -23,7 +23,7 @@ export function BarberCard({ barber }: BarberCardProps) {
 
   return (
     <Link href={`/barbeiro/${barber.slug}`} className="group block">
-      <Card className="overflow-hidden border-gold-subtle bg-surface transition-all duration-300 hover:border-gold/30 hover:shadow-lg hover:shadow-gold/5">
+      <Card className="overflow-hidden border-subtle bg-surface transition-all duration-300 hover:border-brand/30 hover:shadow-lg hover:shadow-moss/5">
         <div className="relative aspect-[4/3] overflow-hidden bg-surface-elevated">
           <Image
             src={barber.image}
@@ -33,7 +33,7 @@ export function BarberCard({ barber }: BarberCardProps) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
           {barber.verified && (
-            <Badge className="absolute right-3 top-3 gap-1 bg-gold/90 text-primary-foreground">
+            <Badge className="absolute right-3 top-3 gap-1 bg-brand/90 text-primary-foreground">
               <BadgeCheck className="size-3" strokeWidth={1.5} />
               Verificado
             </Badge>
@@ -41,7 +41,7 @@ export function BarberCard({ barber }: BarberCardProps) {
         </div>
         <CardContent className="space-y-3 p-5">
           <div>
-            <h3 className="text-lg font-semibold transition-colors group-hover:text-gold">
+            <h3 className="text-lg font-semibold transition-colors group-hover:text-brand">
               {barber.name}
             </h3>
             <p className="text-sm text-muted-foreground">{barber.title}</p>
@@ -49,7 +49,7 @@ export function BarberCard({ barber }: BarberCardProps) {
 
           <div className="flex items-center gap-3 text-sm">
             <span className="flex items-center gap-1">
-              <Star className="size-4 fill-gold text-gold" strokeWidth={1.5} />
+              <Star className="size-4 fill-brand text-brand" strokeWidth={1.5} />
               {barber.rating}
             </span>
             <span className="text-muted-foreground">
@@ -58,7 +58,7 @@ export function BarberCard({ barber }: BarberCardProps) {
           </div>
 
           <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-            <MapPin className="size-3.5 text-gold" strokeWidth={1.5} />
+            <MapPin className="size-3.5 text-brand" strokeWidth={1.5} />
             {neighborhoodName}
           </div>
 
@@ -67,14 +67,14 @@ export function BarberCard({ barber }: BarberCardProps) {
               <Badge
                 key={s}
                 variant="outline"
-                className="border-gold-subtle text-xs font-normal"
+                className="border-subtle text-xs font-normal"
               >
                 {s}
               </Badge>
             ))}
           </div>
 
-          <p className="text-sm font-medium text-gold">
+          <p className="text-sm font-medium text-brown">
             A partir de R$ {barber.services[0]?.price}
           </p>
         </CardContent>

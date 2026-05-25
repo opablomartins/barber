@@ -111,7 +111,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
                 <Link
                   key={n.slug}
                   href={`/bairro/${n.slug}`}
-                  className="rounded-full border border-gold-subtle bg-surface px-5 py-2.5 text-sm transition-colors hover:border-gold hover:text-gold"
+                  className="rounded-full border border-subtle bg-surface px-5 py-2.5 text-sm transition-colors hover:border-brand hover:text-brand"
                 >
                   {n.name}
                 </Link>

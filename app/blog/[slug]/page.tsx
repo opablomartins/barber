@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
 
       <header className="mb-10 space-y-4">
-        <Badge variant="outline" className="border-gold-subtle">
+        <Badge variant="outline" className="border-subtle">
           {post.category}
         </Badge>
         <h1 className="font-heading text-3xl font-semibold sm:text-4xl lg:text-5xl">
@@ -86,10 +86,10 @@ export default async function BlogPostPage({ params }: PageProps) {
         ))}
       </div>
 
-      <footer className="mt-12 border-t border-gold-subtle pt-8">
+      <footer className="mt-12 border-t border-subtle pt-8">
         <Link
           href="/blog"
-          className="text-sm text-gold transition-colors hover:text-gold-muted"
+          className="text-sm text-brand transition-colors hover:text-brand-muted"
         >
           ← Voltar ao blog
         </Link>

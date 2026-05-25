@@ -24,7 +24,7 @@ const steps = [
 export function HowItWorks() {
   return (
     <section
-      className="border-y border-gold-subtle bg-surface py-20 lg:py-28"
+      className="border-y border-subtle bg-surface py-20 lg:py-28"
       aria-labelledby="how-it-works-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export function HowItWorks() {
           {steps.map((item, i) => (
             <FadeIn key={item.step} delay={i * 0.1}>
               <div className="relative text-center md:text-left">
-                <span className="font-heading text-5xl font-bold text-gold/20">
+                <span className="font-heading text-5xl font-bold text-brand/20">
                   {item.step}
                 </span>
                 <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>

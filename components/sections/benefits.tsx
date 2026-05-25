@@ -35,23 +35,23 @@ export function Benefits() {
         <FadeIn className="mx-auto mb-16 max-w-2xl text-center">
           <h2
             id="benefits-heading"
-            className="font-heading text-3xl font-semibold sm:text-4xl"
+            className="font-heading text-3xl font-medium sm:text-4xl"
           >
-            Por que escolher barbeiro a domicílio?
+            Uma experiência pensada para o seu ritmo
           </h2>
           <p className="mt-4 text-muted-foreground">
-            A experiência de uma barbearia premium, com a conveniência que sua
-            rotina exige.
+            Menos barbearia convencional, mais cuidado personalizado — com a
+            calma e a qualidade que você merece.
           </p>
         </FadeIn>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {benefits.map((benefit, i) => (
             <FadeIn key={benefit.title} delay={i * 0.08}>
-              <div className="glass-card group h-full rounded-2xl p-6 transition-colors hover:border-gold/30">
-                <div className="mb-4 inline-flex rounded-xl bg-gold/10 p-3">
+              <div className="glass-card group h-full rounded-2xl p-6 transition-colors hover:border-brand/30">
+                <div className="mb-4 inline-flex rounded-xl bg-brand/10 p-3">
                   <benefit.icon
-                    className="size-6 text-gold"
+                    className="size-6 text-brand"
                     strokeWidth={1.5}
                   />
                 </div>

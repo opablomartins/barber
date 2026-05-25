@@ -29,7 +29,7 @@ export async function FeaturedBarbers() {
             href="/barbeiros"
             className={cn(
               buttonVariants({ variant: "ghost" }),
-              "gap-2 text-gold hover:text-gold",
+              "gap-2 text-brand hover:text-brand",
             )}
           >
             Ver todos

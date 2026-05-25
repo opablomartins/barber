@@ -8,7 +8,7 @@ function StarRating({ rating }: { rating: number }) {
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
-          className={`size-4 ${i < rating ? "fill-gold text-gold" : "text-muted"}`}
+          className={`size-4 ${i < rating ? "fill-brand text-brand" : "text-muted"}`}
           strokeWidth={1.5}
         />
       ))}
@@ -21,7 +21,7 @@ export async function Reviews() {
 
   return (
     <section
-      className="border-y border-gold-subtle bg-surface py-20 lg:py-28"
+      className="border-y border-subtle bg-surface py-20 lg:py-28"
       aria-labelledby="reviews-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
